@@ -4,7 +4,10 @@
   "description": "A web practice project.",
   "main": "index.js",
   "scripts": {
-    "build": "rollup -c && cp ./out/* ./htdocs/js",
+    "build": "npm-run-all -s compile push",
+    "compile": "rollup -c",
+    "lint": "eslint --fix js > log/eslint.log",
+    "push": "cp ./out/* ./htdocs/js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,8 +27,11 @@
     "babel-core": "^6.26.0",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
+    "npm-run-all": "^4.1.2",
     "rollup": "^0.56.5",
-    "rollup-plugin-babel": "^3.0.3"
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-uglify": "^3.0.0"
   },
   "dependencies": {}
 }

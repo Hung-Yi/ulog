@@ -3,7 +3,7 @@
  *  @brief      The Container module of ULog.
  *  @author     Yiwei Chiao (ywchiao@gmail.com)
  *  @date       03/18/2018 created.
- *  @date       03/18/2018 last modified.
+ *  @date       03/25/2018 last modified.
  *  @version    0.1.0
  *  @since      0.1.0
  *  @copyright  MIT, © 2018 Yiwei Chiao
@@ -26,9 +26,7 @@ container.prototype = {
   },
 
   setContent: function (content) {
-    this.node.insertBefore(
-      content, this.node.querySelector('footer')
-    );
+    this.node.insertBefore(content, this.node.lastChild);
 
     return this;
   },

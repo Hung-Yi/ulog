@@ -1,0 +1,39 @@
+/**
+ *  @file       default.css
+ *  @brief      The Default css file for the ulog.
+ *  @author     Yiwei Chiao (ywchiao@gmail.com)
+ *  @date       03/26/2018 createdf
+ *  @date       03/26/2018 last modified.
+ *  @version    0.1.0
+ *  @since      0.1.0
+ *  @copyright  MIT, © 2018 Yiwei Chiao
+ *  @details
+ *
+ *  The Default css file for the ulog.
+ */
+
+html {
+  font-size: 10px;
+  height: 100vh;
+}
+
+textarea {
+  border: 1px solid #999999;
+  width: 80%;
+  margin: 5px 0;
+  padding: 3px;
+  box-sizing: border-box;
+}
+
+.card {
+  border-radius: 12px;
+  border: 1px solid azure;
+  padding: .25rem .5rem;
+  margin: 1rem 3rem;
+  box-shadow: 1px 3px;
+  background-color: #ffefcf;
+  opacity: .75;
+  text-align: center;
+}
+
+/* default.css */

@@ -14,6 +14,7 @@
 'use strict';
 
 import Blog from './blog/blog.js';
+import Icon from './widget/icon.js';
 
 window.addEventListener('load', () => {
   let blog = Blog();
@@ -22,6 +23,10 @@ window.addEventListener('load', () => {
 
   document.body.style.height = '100vh';
   document.body.style.margin = '0';
+
+  [ 'file', 'edit', 'font',  'bold' ].forEach(tag => {
+    document.body.appendChild(new Icon(tag).node);
+  });
 
   document.body.appendChild(blog.node);
 });

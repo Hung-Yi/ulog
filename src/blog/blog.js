@@ -3,7 +3,7 @@
  *  @brief      The Blog module of ULog.
  *  @author     Yiwei Chiao (ywchiao@gmail.com)
  *  @date       03/18/2018 created.
- *  @date       03/18/2018 last modified.
+ *  @date       03/26/2018 last modified.
  *  @version    0.1.0
  *  @since      0.1.0
  *  @copyright  MIT, © 2018 Yiwei Chiao
@@ -14,6 +14,9 @@
 'use strict';
 
 import Container from '../container/container.js';
+import Card from '../widget/card.js';
+import Icon from '../widget/icon.js';
+import TextArea from '../widget/textarea.js';
 
 const banner = function () {
   let el = document.createElement('header');
@@ -44,15 +47,21 @@ const footer = function () {
 };
 
 const content = () => {
+  let card = new Card('blog');
+  let textArea = new TextArea();
   let el = document.createElement('main');
 
-  el.style.height = 'calc(100vh - 6rem)';
+  card.appendChild(textArea.node);
+
+  el.appendChild(card.node);
 
   return el;
 };
 
 export default function () {
   let blog = new Container('div');
+  let icon = new Icon('test');
+  console.log(icon);
 
   return blog.setHeader(banner())
       .setFooter(footer())
