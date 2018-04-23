@@ -3,7 +3,7 @@
  *  @brief      The Configuration file for the rollup.js
  *  @author     Yiwei Chiao (ywchiao@gmail.com)
  *  @date       03/12/2018 created.
- *  @date       03/30/2018 last modified.
+ *  @date       04/15/2018 last modified.
  *  @version    0.1.0
  *  @since      0.1.0
  *  @copyright  MIT, © 2018 Yiwei Chiao
@@ -15,7 +15,7 @@
 import babel from 'rollup-plugin-babel';
 
 export default {
-  input: 'src/index.js',
+  input: 'js/index.js',
   output: {
     file: 'out/ulog.js',
     format: 'iife',

@@ -1,16 +1,15 @@
 # common ignores for git
 
-# in common
+# dirs
 bin/
 build/
 class/
+hooks/
 obj/
 out/
-
-# Cordova dirs
-hooks/
 platforms/
 plugins/
+vendor/
 
 ### Gradle
 .gradle
@@ -140,6 +139,7 @@ typings/
 
 # next.js build output
 .next
+
 
 ### Windows
 
